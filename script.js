@@ -8,7 +8,7 @@ const alertArea = document.querySelector("#alertArea")
 form.addEventListener("submit", (event) => {
   event.preventDefault()
 
-  if(newItemInput.value == " ") {
+  if(newItemInput.value.trim() == "") {
     return alert("Você não pode adicionar um item vazio.")
   }
 
