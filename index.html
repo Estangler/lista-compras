@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>QuickList</title>
+</head>
+<body>
+    <header>
+      <div id="logo">
+        <img src="img/Vector.svg" alt="logo">
+        <h1>
+          quicklist
+        </h1>
+      </div>
+      <nav>
+        <a href="#">
+          <i class="ph ph-arrow-left"></i>
+        <span>Voltar</span>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form id="addItemForm" class="add-item-form">
+          <h2>
+            Lista de compras
+          </h2>
+          <input type="text" id="newItemInput" placeholder="Adicione um novo item" required autocomplete="off" class="new-item-input">
+          <button type="submit" id="addItemBtn" class="add-item-btn">
+            Adicionar item
+          </button>
+        </form>
+      </section>
+      <section>
+        <form>
+          <ul id="itemsList" class="items-list">
+            <!-- <li class="item">
+              <div class="item-wrapper">
+                <input type="checkbox" class="checkbox-input" id="item1">
+                <label for="item1" class="checked">Pão de forma</label>
+              </div>
+              <button class="delete-btn" type="button">
+                <i class="ph ph-trash"></i>
+              </button>
+            </li> -->
+          </ul>
+        </form>
+      </section>
+      <footer id="alertArea" class="alert-area hide-alert">
+        <div class="alert">
+          <i class="ph ph-warning-circle"></i>
+          <strong>O item foi removido da lista</strong>
+        </div>
+        <i class="ph ph-x"></i>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
